@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>$Leverhedge — Trade memes, hedge your exposure with leverage</title>
+<meta name="description" content="Leverhedge ($Leverhedge): a hedgehog with one paw on the leverage lever. Trade memes, hedge your exposure with leverage. Solana meme coin, CA TBA. Parody, not financial advice.">
+<link rel="canonical" href="https://leverhedgememe.lol/">
+<meta name="theme-color" content="#070706">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Leverhedge">
+<meta property="og:url" content="https://leverhedgememe.lol/">
+<meta property="og:title" content="$Leverhedge — Trade memes, hedge your exposure with leverage">
+<meta property="og:description" content="A trading-floor hedgehog, a lever you shouldn't pull, and the eternal crypto truth: the hedge is the leverage.">
+<meta property="og:image" content="https://leverhedgememe.lol/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A fluffy hedgehog with its paw on an industrial leverage lever in front of a candle chart, next to the Leverhedge wordmark">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@LeverHedgeMeme">
+<meta name="twitter:title" content="$Leverhedge — Trade memes, hedge your exposure with leverage">
+<meta name="twitter:description" content="Spines up, bags heavy, liquidations optional. The hedge is the leverage.">
+<meta name="twitter:image" content="https://leverhedgememe.lol/og.jpg">
+<meta name="twitter:image:alt" content="Hedgehog on the leverage lever, Leverhedge wordmark">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/fonts/oxanium-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="/img/hedgehog-960.webp" imagesrcset="/img/hedgehog-480.webp 480w, /img/hedgehog-960.webp 960w" imagesizes="(max-width:900px) 92vw, 46vw" fetchpriority="high">
+<link rel="stylesheet" href="/css/styles.css?v=20261030a">
+<script src="/js/vendor/lenis.min.js?v=20261030a" defer></script>
+<script src="/js/vendor/gsap.min.js?v=20261030a" defer></script>
+<script src="/js/vendor/ScrollTrigger.min.js?v=20261030a" defer></script>
+<script src="/js/main.js?v=20261030a" defer></script>
+</head>
+<body>
+<a class="skip" href="#lore">Skip to content</a>
+<canvas id="tape" aria-hidden="true"></canvas>
+
+<header class="top">
+  <div class="strip" role="note">
+    <span class="blink"></span>
+    <span><b>SOL · $Leverhedge</b> · CA: <b>TBA</b> · only trust the CA posted on <a href="https://x.com/LeverHedgeMeme" target="_blank" rel="noopener">@LeverHedgeMeme</a> · we never DM first</span>
+    <span class="strip-r" id="clock">DESK OPEN</span>
+  </div>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#top" aria-label="Leverhedge home"><img src="/img/emblem-96.webp" width="34" height="34" alt=""><span>Leverhedge</span><em>$Leverhedge</em></a>
+    <ul class="nav-links">
+      <li><a href="#lore"><i>01</i>Lore</a></li>
+      <li><a href="#lever"><i>02</i>The Lever</a></li>
+      <li><a href="#manual"><i>03</i>Manual</a></li>
+      <li><a href="#ticket"><i>04</i>Ticket</a></li>
+      <li><a href="#vault"><i>05</i>Vault</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="https://x.com/LeverHedgeMeme" target="_blank" rel="noopener" aria-label="Leverhedge on X (@LeverHedgeMeme)"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8.1-9.3L1 2h7l4.8 6.3L18.9 2Zm-1.2 18h1.7L6.4 3.9H4.6L17.7 20Z"/></svg><span>@LeverHedgeMeme</span></a>
+      <span class="btn btn-sm btn-soon" aria-disabled="true" title="Buy link goes live with the CA">Buy · Soon</span>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-grid wrap">
+    <div class="hero-copy">
+      <p class="label"><span class="dot g"></span> Position: open · Size: yes · Hedge: more leverage</p>
+      <h1 class="sr-only">Leverhedge ($Leverhedge)</h1>
+      <img class="wordmark" src="/img/wordmark-600.webp" width="600" height="200" alt="Leverhedge">
+      <p class="slogan">Trade memes,<br><span class="g">hedge your exposure</span><br>with <span class="r">leverage</span>.</p>
+      <p class="lede">Meet the market's fluffiest degen: one paw on the big metal lever, eyes locked on the candles, ready to hedge… by adding more leverage.</p>
+      <div class="ca" role="group" aria-label="Contract address">
+        <span class="ca-tag">CA</span>
+        <code id="ca">TBA — posted first on @LeverHedgeMeme</code>
+        <button type="button" class="ca-btn" data-copy="#ca" data-soon="1">Copy</button>
+      </div>
+      <div class="cta-row">
+        <span class="btn btn-soon btn-lg" aria-disabled="true">Buy $Leverhedge · Soon</span>
+        <span class="btn btn-soon btn-lg btn-ghost" aria-disabled="true">Chart · Soon</span>
+        <a class="btn btn-lg btn-x" href="https://x.com/LeverHedgeMeme" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8.1-9.3L1 2h7l4.8 6.3L18.9 2Zm-1.2 18h1.7L6.4 3.9H4.6L17.7 20Z"/></svg> Follow on X</a>
+      </div>
+      <ul class="chips" aria-label="Status">
+        <li><b>Chain</b> Solana</li><li><b>MCAP</b> —</li><li><b>24H</b> —</li><li><b>Telegram</b> none</li>
+      </ul>
+    </div>
+    <figure class="hero-art">
+      <div class="monitor" aria-hidden="true"><canvas id="heroChart"></canvas></div>
+      <img class="hog" src="/img/hedgehog-960.webp" srcset="/img/hedgehog-480.webp 480w, /img/hedgehog-960.webp 960w" sizes="(max-width:900px) 92vw, 46vw" width="960" height="960" alt="A photoreal fluffy hedgehog on a dark wooden trading desk, left paw on a big industrial metal lever, candle chart glowing behind" fetchpriority="high">
+      <figcaption><span class="hud tl">LEV 50x</span><span class="hud tr">HEDGE: ✓ (it's leverage)</span><span class="hud bl">LIQ: emotionally</span><span class="hud br">PAW ON LEVER</span></figcaption>
+    </figure>
+  </div>
+  <a class="scroll-cue" href="#lore" aria-label="Scroll to lore"><span>pull down to open position</span><i></i></a>
+</section>
+
+<!-- TAPE -->
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>LONG SPINES <b class="g">▲</b></span><span>SHORT PATIENCE <b class="r">▼</b></span><span>THE HEDGE IS THE LEVERAGE</span><span>$LEVERHEDGE</span><span>SIZE: YES</span><span>LIQUIDATIONS OPTIONAL</span><span>PAW ON LEVER</span>
+  <span>LONG SPINES <b class="g">▲</b></span><span>SHORT PATIENCE <b class="r">▼</b></span><span>THE HEDGE IS THE LEVERAGE</span><span>$LEVERHEDGE</span><span>SIZE: YES</span><span>LIQUIDATIONS OPTIONAL</span><span>PAW ON LEVER</span>
+</div></div>
+
+<!-- LORE -->
+<section class="lore wrap" id="lore">
+  <p class="label">01 · desk memo</p>
+  <h2 data-split>"I'm hedged," said the hedgehog.<br><span class="dim">Size was 50x.</span></h2>
+  <div class="lore-grid">
+    <ol class="lore-lines">
+      <li data-reveal><b>09:30</b> Opens the desk. Fluffs spines. Sniffs the order book.</li>
+      <li data-reveal style="--i:1"><b>09:31</b> Sees a meme. Feels exposure. Decides to hedge.</li>
+      <li data-reveal style="--i:2"><b>09:32</b> Hedges the only way it knows: pulls the lever. More leverage.</li>
+      <li data-reveal style="--i:3"><b>09:33</b> Curls into a ball. Calls it "risk management".</li>
+    </ol>
+    <aside class="memo" data-reveal style="--i:2">
+      <p class="label">compliance note</p>
+      <p>No whitepaper. No serious desk. Just a trading-floor hedgehog, a lever you shouldn't pull, and the eternal crypto truth:</p>
+      <p class="big">the hedge <span class="g">is</span> the leverage.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- THE LEVER (toy) -->
+<section class="lever-sec" id="lever">
+  <div class="wrap">
+    <p class="label">02 · the toy · do not pull (pull it)</p>
+    <h2 data-split>The Lever<span class="dim">™</span></h2>
+    <p class="sub">Grab the handle and yank it right (or use arrow keys). Every notch is more "hedge". Hit max and see what the hedgehog does. Simulated parody, not a trading tool.</p>
+  </div>
+  <div class="rig wrap">
+    <div class="panel console" aria-live="polite">
+      <div class="readout"><span class="label">leverage</span><output id="levOut">1x</output></div>
+      <div class="gauge" aria-hidden="true"><canvas id="gauge" width="520" height="300"></canvas></div>
+      <dl class="stats">
+        <div><dt>Hedge status</dt><dd id="hedgeOut">unhedged (sober)</dd></div>
+        <div><dt>Liq. distance</dt><dd id="liqOut">100%</dd></div>
+        <div><dt>Spines</dt><dd id="spineOut">relaxed</dd></div>
+        <div><dt>Desk mood</dt><dd id="moodOut">coffee</dd></div>
+      </dl>
+    </div>
+    <div class="panel lever-wrap">
+      <svg id="leverSvg" viewBox="0 0 320 520" role="slider" tabindex="0" aria-label="Leverage lever. Use arrow keys or drag down to add leverage." aria-valuemin="1" aria-valuemax="100" aria-valuenow="1" aria-valuetext="1x">
+        <defs>
+          <linearGradient id="steel" x1="0" x2="1"><stop offset="0" stop-color="#4b4c50"/><stop offset=".45" stop-color="#d9dadc"/><stop offset=".6" stop-color="#9c9ea3"/><stop offset="1" stop-color="#3b3c40"/></linearGradient>
+          <linearGradient id="base" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3632"/><stop offset="1" stop-color="#16140f"/></linearGradient>
+          <linearGradient id="knob" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a2c"/><stop offset="1" stop-color="#0c0c0d"/></linearGradient>
+        </defs>
+        <g class="notches" id="notches"></g>
+        <rect x="70" y="420" width="180" height="60" rx="10" fill="url(#base)" stroke="#5b544b"/>
+        <rect x="110" y="380" width="100" height="56" rx="8" fill="url(#base)" stroke="#5b544b"/>
+        <circle cx="160" cy="408" r="10" fill="#7d776e"/>
+        <circle cx="92" cy="450" r="5" fill="#7d776e"/><circle cx="228" cy="450" r="5" fill="#7d776e"/>
+        <g id="arm" style="transform-origin:160px 408px">
+          <rect x="151" y="120" width="18" height="290" rx="9" fill="url(#steel)"/>
+          <g id="handle" class="grab">
+            <rect x="118" y="70" width="84" height="64" rx="10" fill="url(#knob)" stroke="#000"/>
+            <rect x="126" y="78" width="68" height="8" rx="4" fill="#ffffff22"/>
+            <text x="160" y="114" text-anchor="middle" class="knob-txt">PULL</text>
+          </g>
+        </g>
+        <text x="160" y="505" text-anchor="middle" class="plate">LEVERHEDGE · MODEL 50X</text>
+      </svg>
+      <div class="lever-btns">
+        <button type="button" class="btn btn-sm btn-ghost" id="levReset">Reset to 1x (cowards)</button>
+        <button type="button" class="btn btn-sm" id="levMax">Full send 100x</button>
+      </div>
+    </div>
+    <div class="panel pnl">
+      <p class="label">simulated position · not real</p>
+      <canvas id="pnl" width="560" height="320" aria-label="Simulated candle chart reacting to leverage" role="img"></canvas>
+      <p class="pnl-line"><span>uPnL</span><b id="pnlOut">+0.00%</b></p>
+    </div>
+  </div>
+  <div class="liq" id="liq" role="alert" hidden>
+    <div class="liq-card">
+      <p class="label r">margin call · automated message</p>
+      <p class="liq-big">LIQUIDATED</p>
+      <p>The hedgehog has curled into a ball. This is technically a hedge.</p>
+      <button type="button" class="btn" id="liqClose">Uncurl &amp; try again</button>
+    </div>
+  </div>
+</section>
+
+<!-- MANUAL (pinned horizontal) -->
+<section class="manual" id="manual">
+  <div class="manual-pin">
+    <div class="wrap manual-head">
+      <p class="label">03 · desk manual · 4 steps to max cope</p>
+      <h2>How the hedgehog hedges</h2>
+    </div>
+    <div class="cards" id="cards">
+      <article class="card"><span class="num">01</span><h3>Open position</h3><p>Find a meme. Love the meme. Become the meme. Size: yes.</p><div class="mini mini-a" aria-hidden="true"></div></article>
+      <article class="card"><span class="num">02</span><h3>Identify exposure</h3><p>Realise you are exposed. Feel the wind on your belly fur.</p><div class="mini mini-b" aria-hidden="true"></div></article>
+      <article class="card"><span class="num">03</span><h3>Hedge it</h3><p>Pull the lever. The hedge is the leverage. It has always been the leverage.</p><div class="mini mini-c" aria-hidden="true"></div></article>
+      <article class="card"><span class="num">04</span><h3>Spines up</h3><p>Curl into a ball. Ignore the chart. Bags heavy, liquidations optional.</p><div class="mini mini-d" aria-hidden="true"></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- TICKET -->
+<section class="ticket-sec wrap" id="ticket">
+  <p class="label">04 · trade ticket</p>
+  <h2 data-split>The numbers<span class="dim"> (pending)</span></h2>
+  <div class="ticket" data-reveal>
+    <div class="ticket-row"><span>Asset</span><b>Leverhedge ($Leverhedge)</b></div>
+    <div class="ticket-row"><span>Chain</span><b>Solana</b></div>
+    <div class="ticket-row"><span>Contract</span><b class="soon">TBA · copy goes live at launch</b></div>
+    <div class="ticket-row"><span>Buy</span><b class="soon">Soon</b></div>
+    <div class="ticket-row"><span>Chart</span><b class="soon">Soon</b></div>
+    <div class="ticket-row"><span>Socials</span><b><a href="https://x.com/LeverHedgeMeme" target="_blank" rel="noopener">x.com/LeverHedgeMeme</a></b></div>
+    <div class="ticket-row"><span>Utility</span><b>cope, mostly</b></div>
+    <div class="stamp" aria-hidden="true">PENDING<br>FILL</div>
+  </div>
+  <div class="steps">
+    <p class="label">how to buy · when it's live</p>
+    <ol>
+      <li data-reveal><b>01</b><span>Get a Solana wallet (Phantom, Solflare, Backpack).</span></li>
+      <li data-reveal style="--i:1"><b>02</b><span>Fund it with SOL.</span></li>
+      <li data-reveal style="--i:2"><b>03</b><span>Copy the CA — only from this site or @LeverHedgeMeme.</span></li>
+      <li data-reveal style="--i:3"><b>04</b><span>Swap. Put one paw on the lever. Don't pull it. (Pull it.)</span></li>
+    </ol>
+    <p class="warn">⚠ CA is TBA. Anything you see before the official post is not us. We never DM first.</p>
+  </div>
+</section>
+
+<!-- VAULT -->
+<section class="vault wrap" id="vault">
+  <p class="label">05 · meme vault · 0 memes filed</p>
+  <h2 data-split>The Vault<span class="dim"> is empty</span></h2>
+  <p class="sub">The desk is still printing. Memes land here soon. Until then, grab the logo and banner below.</p>
+  <div class="vault-grid" aria-label="Meme vault, empty">
+    <div class="slot"><span>slot 01</span><b>SOON</b></div><div class="slot"><span>slot 02</span><b>SOON</b></div><div class="slot"><span>slot 03</span><b>SOON</b></div><div class="slot"><span>slot 04</span><b>SOON</b></div><div class="slot"><span>slot 05</span><b>SOON</b></div><div class="slot"><span>slot 06</span><b>SOON</b></div>
+  </div>
+  <div class="kit">
+    <a class="kit-item" href="/kit/leverhedge-logo.png" download><img src="/img/hedgehog-160.webp" width="80" height="80" alt="" loading="lazy" decoding="async"><span><b>Logo</b> 1024² PNG</span></a>
+    <a class="kit-item" href="/kit/leverhedge-banner.png" download><img src="/img/banner-768.webp" width="240" height="80" alt="" loading="lazy" decoding="async"><span><b>Banner</b> 3:1 PNG</span></a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq wrap" id="faq">
+  <p class="label">06 · risk disclosures nobody reads</p>
+  <h2>FAQ</h2>
+  <details><summary>Is the hedge actually a hedge?</summary><p>No. The hedge is leverage. That's the joke. That's the whole coin.</p></details>
+  <details><summary>Where's the contract address?</summary><p>TBA. It will be posted first on <a href="https://x.com/LeverHedgeMeme" target="_blank" rel="noopener">@LeverHedgeMeme</a> and on this site. Ignore anything else.</p></details>
+  <details><summary>Is there a Telegram?</summary><p>No. X only: <a href="https://x.com/LeverHedgeMeme" target="_blank" rel="noopener">x.com/LeverHedgeMeme</a>. Any "Leverhedge Telegram" is not us.</p></details>
+  <details><summary>Will it go up?</summary><p>The hedgehog doesn't know. The hedgehog has its paw on a lever and no plan.</p></details>
+  <details><summary>Is this financial advice?</summary><p>It is a cartoon hedgehog meme. Absolutely not.</p></details>
+</section>
+
+<!-- CLOSE -->
+<section class="close">
+  <div class="wrap">
+    <img class="banner" src="/img/banner-1536.webp" srcset="/img/banner-768.webp 768w, /img/banner-1536.webp 1536w" sizes="(max-width:900px) 92vw, 70vw" width="1536" height="512" alt="Leverhedge wordmark with hedgehog emblem" loading="lazy" decoding="async">
+    <p class="slogan sm">Spines up. Bags heavy. <span class="r">Liquidations optional.</span></p>
+    <div class="cta-row center">
+      <a class="btn btn-lg btn-x" href="https://x.com/LeverHedgeMeme" target="_blank" rel="noopener">Follow @LeverHedgeMeme</a>
+      <span class="btn btn-lg btn-soon" aria-disabled="true">Buy · Soon</span>
+      <span class="btn btn-lg btn-soon btn-ghost" aria-disabled="true">Chart · Soon</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot wrap">
+  <div><img src="/img/emblem-96.webp" width="28" height="28" alt=""> <b>Leverhedge</b> · $Leverhedge · Solana</div>
+  <p>Leverhedge is a meme coin with no intrinsic value or expectation of financial return. Parody only; the lever is a joke, the leverage in the toy is simulated. Not financial advice. Not affiliated with any exchange. The hedgehog cannot manage your risk — it can barely manage its own spines.</p>
+  <p class="mono">CA: TBA · X: <a href="https://x.com/LeverHedgeMeme" target="_blank" rel="noopener">@LeverHedgeMeme</a> · © 2026 Leverhedge</p>
+</footer>
+</body>
+</html>
